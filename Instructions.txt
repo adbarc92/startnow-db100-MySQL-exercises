@@ -1,0 +1,20 @@
+/Users/ADB/oca/startnow-db100-mysql-exercises/node_modules/mysql
+
+$PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/ADB/bin:/Users/ADB/bin
+
+mysql -u root -p
+
+echo 'export PATH="/usr/local/mysql/bin:$PATH"' >> ~/.bash_profile
+
+
+username = root
+
+1. Connect to the MySQL Server with mysql client
+	A. $ mysql -u root -p
+	B. mysql > source /Users/ADB/oca/startnow-db100-mysql-exercises/sakila-db/sakila-schema.sql
+		// PCreate database structure
+	C. mysql > source /Users/ADB/oca/startnow-db100-mysql-exercises/sakila-db/sakila-data.sql
+		// Populate database structure
+2. Confirm database installed correctly
+	A. mysql > USE sakila;
+  B. mysql > SELECT COUNT(*) FROM film;
